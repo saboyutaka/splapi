@@ -24,7 +24,7 @@ Or install it yourself as:
 require 'splapi'
 
 client = SplAPI::Client.new
-res = client.gachi_rules
+
 
 res = client.gachi_now
 res.body
@@ -34,20 +34,21 @@ res.body
 #     "end"=>"2016-03-04T23:00:00",
 #     "start"=>"2016-03-04T19:00:00"}]}
 
+res = client.gachi_rules
 res.body['rules']
 # => ["ガチエリア", "ガチホコ", "ガチヤグラ"]
 
 res = client.weapons
-# => {"weapons"=>
-#   [".52ガロン",
-#    ".52ガロンデコ",
-#    ".96ガロン",
-#    ".96ガロンデコ",
-#    "14式竹筒銃・乙",
-#    .
-#    .
-#    .
-#   ]}
+res.body['weapons']
+# => [".52ガロン",
+#  ".52ガロンデコ",
+#  ".96ガロン",
+#  ".96ガロンデコ",
+#  "14式竹筒銃・乙",
+#  .
+#  .
+#  .
+#  ]
 ```
 
 
