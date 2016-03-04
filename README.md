@@ -1,6 +1,7 @@
 # [SplAPI](http://splapi.retrorocket.biz)
 
 [splapi - スプラトゥーンのステージ情報がとれるやつ](http://docs.splapi.apiary.io/)のRuby実装のClient gem。
+各APIのパラメーターは上記の公式リファレンスを参照してください。
 
 ## Installation
 
