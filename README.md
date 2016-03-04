@@ -49,6 +49,11 @@ res.body['weapons']
 #  .
 #  .
 #  ]
+
+# Other examples
+client.gachi(date: '2015-08-31T03:00:00', to: '2015-09-03T19:00:00', rule: 'ガチヤグラ,ガチホコ', map: 'シオノメ油田,ハコフグ倉庫')
+client.fes(team: 'ボケ')
+
 ```
 
 
