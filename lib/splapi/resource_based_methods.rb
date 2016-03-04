@@ -16,6 +16,15 @@ module SplAPI
       get('gachi/next_all', params, headers)
     end
 
+    def gachi_prev(params = nil, headers = nil)
+      get('gachi/prev', params, headers)
+    end
+
+    def gachi_prev_all(params = nil, headers = nil)
+      get('gachi/prev_all', params, headers)
+    end
+
+
     def gachi_rules(params = nil, headers = nil)
       get('gachi/rules', params, headers)
     end
@@ -34,6 +43,14 @@ module SplAPI
 
     def regular_next_all(params = nil, headers = nil)
       get('regular/next_all', params, headers)
+    end
+
+    def regular_prev(params = nil, headers = nil)
+      get('regular/prev', params, headers)
+    end
+
+    def regular_prev_all(params = nil, headers = nil)
+      get('regular/prev_all', params, headers)
     end
 
     def fes(params = nil, headers = nil)
